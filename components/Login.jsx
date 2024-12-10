@@ -9,7 +9,7 @@ export default function Login() {
     <View>
       <Image
         source={require("./../assets/images/login.png")}
-        style={{ width: "100%", height: 450 }}
+        style={{ width: "100%", height: 550 }}
       />
       <View style={styles.container}>
         <Text
@@ -67,6 +67,6 @@ const styles = StyleSheet.create({
     padding: 15,
     backgroundColor: Colors.PRIMARY,
     borderRadius: 99,
-    marginTop: "20%",
+    marginTop: "10%",
   },
 });

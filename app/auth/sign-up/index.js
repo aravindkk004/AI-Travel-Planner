@@ -35,6 +35,7 @@ export default function SignUp() {
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         const user = userCredential.user;
+        router.replace("/mytrip");
         console.log(user);
       })
       .catch((error) => {
@@ -104,7 +105,7 @@ export default function SignUp() {
           borderRadius: 10,
         }}
       >
-        <Text style={{ color: Colors.WHITE, textAlign: "center" }}>
+        <Text style={{ color: Colors.WHITE, textAlign: "center", fontSize: 17 }}>
           Create Account
         </Text>
       </TouchableOpacity>
@@ -120,7 +121,7 @@ export default function SignUp() {
           borderWidth: 1,
         }}
       >
-        <Text style={{ color: Colors.PRIMARY, textAlign: "center" }}>
+        <Text style={{ color: Colors.PRIMARY, textAlign: "center", fontSize: 17 }}>
           Sign In
         </Text>
       </TouchableOpacity>
